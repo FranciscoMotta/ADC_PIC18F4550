@@ -14,7 +14,6 @@
 void inicioPuertos(void);
 
 void main(void) {
-    int variableDeGuarda = 0;
     inicioPuertos();
     ADCON0 = 0x01; // Inioiamos con el puerto analogo AN0
     ADCON1 = 0x0E; // Elegimos el chanal de entrada del A0
