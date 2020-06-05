@@ -1,13 +1,16 @@
 __CFG_XINST$OFF 0 0 ABS 0
+__end_of_inicioPuertos 7FAE 0 CODE 0
 __S0 30000E 0 ABS 0
-__S1 0 0 ABS 0
+__S1 3 0 ABS 0
 __S2 0 0 ABS 0
 __Hintentry 0 0 ABS 0
 __CFG_PWRT$OFF 0 0 ABS 0
 __Lintentry 0 0 ABS 0
-_main 7FF6 0 CODE 0
+_LATD F8C 0 ABS 0
+_main 7FB4 0 CODE 0
 ___sp 0 0 STACK 2
 start 0 0 CODE 0
+_TRISD F95 0 ABS 0
 __Hirdata 0 0 CODE 0
 __Lirdata 0 0 CODE 0
 __HRAM 0 0 ABS 0
@@ -30,6 +33,9 @@ __Lbss 0 0 RAM 1
 ___param_bank 0 0 ABS 0
 __Hnvrram 0 0 COMRAM 1
 __Lnvrram 0 0 COMRAM 1
+_ADCON0 FC2 0 ABS 0
+_ADCON1 FC1 0 ABS 0
+_ADCON2 FC0 0 ABS 0
 __Heeprom_data 0 0 EEDATA 0
 __Leeprom_data 0 0 EEDATA 0
 __Hintsave_regs 0 0 BIGRAM 1
@@ -51,6 +57,7 @@ __Lfarbss 0 0 FARRAM 0
 __Hintcode 0 0 CODE 0
 __Lintcode 0 0 CODE 0
 __Hfardata 0 0 FARRAM 0
+_ADRESH FC4 0 ABS 0
 __Lfardata 0 0 FARRAM 0
 __Habs1 0 0 ABS 0
 __Labs1 0 0 ABS 0
@@ -75,11 +82,11 @@ __Linit 0 0 CODE 0
 __Hintcodelo 0 0 CODE 0
 __Lintcodelo 0 0 CODE 0
 __Hrbss 0 0 COMRAM 1
-__end_of_main 7FFA 0 CODE 0
+__end_of_main 8000 0 CODE 0
 __Lrbss 0 0 COMRAM 1
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
-end_of_initialization 7FFA 0 CODE 0
+end_of_initialization 7FAE 0 CODE 0
 __CFG_USBDIV$1 0 0 ABS 0
 __CFG_VREGEN$OFF 0 0 ABS 0
 __CFG_PLLDIV$1 0 0 ABS 0
@@ -107,10 +114,13 @@ __Hbank7 0 0 ABS 0
 __Lbank7 0 0 ABS 0
 __Htext0 0 0 ABS 0
 __Ltext0 0 0 ABS 0
-__ptext0 7FF6 0 CODE 0
+__Htext1 0 0 ABS 0
+__Ltext1 0 0 ABS 0
+__ptext0 7FB4 0 CODE 0
+__ptext1 7FA8 0 CODE 0
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
-__end_of__initialization 7FFA 0 CODE 0
+__end_of__initialization 7FAE 0 CODE 0
 ___rparam_used 1 0 ABS 0
 __Hidata 0 0 CODE 0
 __Lidata 0 0 CODE 0
@@ -127,8 +137,8 @@ __Hspace_0 30000E 0 ABS 0
 __HcstackCOMRAM 0 0 ABS 0
 __Lspace_0 0 0 ABS 0
 __LcstackCOMRAM 0 0 ABS 0
-__pcstackCOMRAM 0 0 COMRAM 1
-__Hspace_1 0 0 ABS 0
+__pcstackCOMRAM 1 0 COMRAM 1
+__Hspace_1 3 0 ABS 0
 __Lspace_1 0 0 ABS 0
 __Hsmallconst 0 0 SMALLCONST 0
 __Lsmallconst 0 0 SMALLCONST 0
@@ -139,7 +149,7 @@ __Lnvbit 0 0 COMRAM 1
 __Hcinit 0 0 ABS 0
 __Lcinit 0 0 ABS 0
 __CFG_FOSC$HS 0 0 ABS 0
-__pcinit 7FFA 0 CODE 0
+__pcinit 7FAE 0 CODE 0
 __CFG_EBTRB$OFF 0 0 ABS 0
 __ramtop 800 0 RAM 0
 __mediumconst 0 0 MEDIUMCONST 0
@@ -152,6 +162,9 @@ __CFG_WRT2$OFF 0 0 ABS 0
 __CFG_WRT3$OFF 0 0 ABS 0
 __CFG_FCMEN$OFF 0 0 ABS 0
 __CFG_CCP2MX$OFF 0 0 ABS 0
+_ADCON0bits FC2 0 ABS 0
+_ADCON1bits FC1 0 ABS 0
+_ADCON2bits FC0 0 ABS 0
 ___inthi_sp 0 0 STACK 2
 __CFG_BORV$3 0 0 ABS 0
 ___intlo_sp 0 0 STACK 2
@@ -174,33 +187,50 @@ __CFG_WRTC$OFF 0 0 ABS 0
 __CFG_WRTD$OFF 0 0 ABS 0
 __CFG_CPB$OFF 0 0 ABS 0
 __CFG_CPD$OFF 0 0 ABS 0
-start_initialization 7FFA 0 CODE 0
+start_initialization 7FAE 0 CODE 0
 __CFG_IESO$OFF 0 0 ABS 0
 __CFG_MCLRE$ON 0 0 ABS 0
-__initialization 7FFA 0 CODE 0
+__initialization 7FAE 0 CODE 0
 __CFG_LPT1OSC$OFF 0 0 ABS 0
 __CFG_ICPRT$OFF 0 0 ABS 0
 __CFG_BOR$OFF 0 0 ABS 0
 __activetblptr 0 0 ABS 0
+__size_of_inicioPuertos 0 0 ABS 0
 __CFG_WDT$OFF 0 0 ABS 0
+_inicioPuertos 7FA8 0 CODE 0
 __CFG_LVP$OFF 0 0 ABS 0
 %segments
 reset_vec 0 3 CODE 0 0
 config 300000 30000D CONFIG 300000 0
 idloc 200000 200007 IDLOC 200000 0
-cinit 7FFA 7FFF CODE 7FFA 0
-text0 7FF6 7FF9 CODE 7FF6 0
+cstackCOMRAM 1 2 COMRAM 1 1
+text0 7FB4 7FFF CODE 7FB4 0
+cinit 7FAE 7FB3 CODE 7FAE 0
+text1 7FA8 7FAD CODE 7FA8 0
 %locals
 dist/default/production\pic18ADC.X.production.o
 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
-C:\Users\HP\AppData\Local\Temp\s96k.s
-530 7FFA 0 CODE 0
-532 7FFA 0 CODE 0
-535 7FFA 0 CODE 0
-541 7FFA 0 CODE 0
-543 7FFA 0 CODE 0
-544 7FFC 0 CODE 0
+C:\Users\HP\AppData\Local\Temp\sg10.s
+889 7FAE 0 CODE 0
+891 7FAE 0 CODE 0
+894 7FAE 0 CODE 0
+900 7FAE 0 CODE 0
+902 7FAE 0 CODE 0
+903 7FB0 0 CODE 0
 main.c
-12 7FF6 0 CODE 0
-13 7FF6 0 CODE 0
-14 7FF6 0 CODE 0
+16 7FB4 0 CODE 0
+17 7FB4 0 CODE 0
+18 7FB4 0 CODE 0
+19 7FB8 0 CODE 0
+20 7FBC 0 CODE 0
+21 7FC0 0 CODE 0
+29 7FC4 0 CODE 0
+30 7FC8 0 CODE 0
+31 7FCA 0 CODE 0
+33 7FDC 0 CODE 0
+34 7FE0 0 CODE 0
+35 7FF8 0 CODE 0
+main.c
+39 7FA8 0 CODE 0
+40 7FA8 0 CODE 0
+41 7FAC 0 CODE 0

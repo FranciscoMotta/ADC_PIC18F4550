@@ -5692,7 +5692,38 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 #pragma config EBTRB = OFF
 # 10 "main.c" 2
 
+# 1 "./miADC.h" 1
+# 35 "./miADC.h"
+void simpleAdcInit (int justify, char canal, char pines, int adc_status);
+# 11 "main.c" 2
+
+
+
+void inicioPuertos(void);
 
 void main(void) {
+    int variableDeGuarda = 0;
+    inicioPuertos();
+    ADCON0 = 0x01;
+    ADCON1 = 0x0E;
+    ADCON2 = 0x24;
+
+
+
+
+
+
+START:
+    ADRESH = 0;
+    ADCON0bits.GO = 1;
+    if (ADCON0bits.GO == 1) goto START;
+
+    LATD = ADRESH;
+    _delay((unsigned long)((500)*(20000000/4000.0)));
+    goto START;
     return;
+}
+
+void inicioPuertos(void) {
+    TRISD = 0X00;
 }

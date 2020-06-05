@@ -1,5 +1,69 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
+"14 main.c
+[; ;main.c: 14: void inicioPuertos(void);
+[v _inicioPuertos `(v ~T0 @X0 0 ef ]
+"6666 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6666: extern volatile unsigned char ADCON0 __attribute__((address(0xFC2)));
+[v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
+"6581
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6581: extern volatile unsigned char ADCON1 __attribute__((address(0xFC1)));
+[v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
+"6510
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6510: extern volatile unsigned char ADCON2 __attribute__((address(0xFC0)));
+[v _ADCON2 `Vuc ~T0 @X0 0 e@4032 ]
+"6799
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6799: extern volatile unsigned char ADRESH __attribute__((address(0xFC4)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@4036 ]
+"6672
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6672:     struct {
+[s S273 :1 `uc 1 :1 `uc 1 ]
+[n S273 . . GO_NOT_DONE ]
+"6676
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6676:     struct {
+[s S274 :1 `uc 1 :1 `uc 1 :4 `uc 1 ]
+[n S274 . ADON GO_nDONE CHS ]
+"6681
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6681:     struct {
+[s S275 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S275 . . GO_DONE CHS0 CHS1 CHS2 CHS3 ]
+"6689
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6689:     struct {
+[s S276 :1 `uc 1 :1 `uc 1 ]
+[n S276 . . DONE ]
+"6693
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6693:     struct {
+[s S277 :1 `uc 1 :1 `uc 1 ]
+[n S277 . . GO ]
+"6697
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6697:     struct {
+[s S278 :1 `uc 1 :1 `uc 1 ]
+[n S278 . . NOT_DONE ]
+"6701
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6701:     struct {
+[s S279 :1 `uc 1 :1 `uc 1 ]
+[n S279 . . nDONE ]
+"6705
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6705:     struct {
+[s S280 :1 `uc 1 :1 `uc 1 ]
+[n S280 . . GODONE ]
+"6671
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6671: typedef union {
+[u S272 `S273 1 `S274 1 `S275 1 `S276 1 `S277 1 `S278 1 `S279 1 `S280 1 ]
+[n S272 . . . . . . . . . ]
+"6710
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6710: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0xFC2)));
+[v _ADCON0bits `VS272 ~T0 @X0 0 e@4034 ]
+"3263
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3263: extern volatile unsigned char LATD __attribute__((address(0xF8C)));
+[v _LATD `Vuc ~T0 @X0 0 e@3980 ]
+[v F3152 `(v ~T0 @X0 1 tf1`ul ]
+"187 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18.h
+[v __delay `JF3152 ~T0 @X0 0 e ]
+[p i __delay ]
+"4001 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4001: extern volatile unsigned char TRISD __attribute__((address(0xF95)));
+[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
@@ -587,16 +651,68 @@ Version 4.0 HI-TECH Software Intermediate Code
 "76
 [p x EBTRB = OFF ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"12 main.c
-[; ;main.c: 12: void main(void) {
+"16 main.c
+[; ;main.c: 16: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"13
-[; ;main.c: 13:     return;
+"17
+[; ;main.c: 17:     int variableDeGuarda = 0;
+[v _variableDeGuarda `i ~T0 @X0 1 a ]
+[e = _variableDeGuarda -> 0 `i ]
+"18
+[; ;main.c: 18:     inicioPuertos();
+[e ( _inicioPuertos ..  ]
+"19
+[; ;main.c: 19:     ADCON0 = 0x01;
+[e = _ADCON0 -> -> 1 `i `uc ]
+"20
+[; ;main.c: 20:     ADCON1 = 0x0E;
+[e = _ADCON1 -> -> 14 `i `uc ]
+"21
+[; ;main.c: 21:     ADCON2 = 0x24;
+[e = _ADCON2 -> -> 36 `i `uc ]
+"28
+[; ;main.c: 28: START:
+[e :U 368 ]
+"29
+[; ;main.c: 29:     ADRESH = 0;
+[e = _ADRESH -> -> 0 `i `uc ]
+"30
+[; ;main.c: 30:     ADCON0bits.GO = 1;
+[e = . . _ADCON0bits 4 1 -> -> 1 `i `uc ]
+"31
+[; ;main.c: 31:     if (ADCON0bits.GO == 1) goto START;
+[e $ ! == -> . . _ADCON0bits 4 1 `i -> 1 `i 369  ]
+[e $U 368  ]
+[e :U 369 ]
+"33
+[; ;main.c: 33:     LATD = ADRESH;
+[e = _LATD _ADRESH ]
+"34
+[; ;main.c: 34:     _delay((unsigned long)((500)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"35
+[; ;main.c: 35:     goto START;
+[e $U 368  ]
+"36
+[; ;main.c: 36:     return;
 [e $UE 367  ]
-"14
-[; ;main.c: 14: }
+"37
+[; ;main.c: 37: }
 [e :UE 367 ]
+}
+"39
+[; ;main.c: 39: void inicioPuertos(void) {
+[v _inicioPuertos `(v ~T0 @X0 1 ef ]
+{
+[e :U _inicioPuertos ]
+[f ]
+"40
+[; ;main.c: 40:     TRISD = 0X00;
+[e = _TRISD -> -> 0 `i `uc ]
+"41
+[; ;main.c: 41: }
+[e :UE 370 ]
 }
