@@ -14,7 +14,7 @@
 void inicioPuertos(void);
 
 void main(void) {
-    int cariable = 0x00;
+    int variable = 0x00;
     inicioPuertos();
     ADCON0 = 0x01; // Inioiamos con el puerto analogo AN0
     ADCON1 = 0x0E; // Elegimos el chanal de entrada del A0
